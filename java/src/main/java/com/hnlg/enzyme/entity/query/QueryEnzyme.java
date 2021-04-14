@@ -11,5 +11,4 @@ public class QueryEnzyme extends BaseQuery {
     private String type;
     private String condition;
     private String typeValue;
-
 }
