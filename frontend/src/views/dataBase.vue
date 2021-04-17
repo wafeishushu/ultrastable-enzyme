@@ -1381,128 +1381,7 @@ export default {
                 this.$Header_http({method:'post',url: this.$api.user.findEnzymeByIdList},{ids:ids}).then(res=>{
                     // console.log(res)
                     if(res.code == 200){
-                        // let enzymeAcidAlkaliTolerance = []
-                        // let enzymeAminoAcidNum = []
-                        // let enzymeBelong = []
-                        // let enzymeBhEvaluation = []
-                        // let enzymeClassification = []
-                        // let enzymeEcCode = []
-                        // let enzymeGiNum = []
-                        // let enzymeHalfLife = []
-                        // let enzymeKcatEvaluation = []
-                        // let enzymeKcatKmEvaluation = []
-                        // let enzymeKda = []
-                        // let enzymeKmMmolEvaluation = []
-                        // let enzymeMaxPhScope = []
-                        // let enzymeMaxTemperatureScope = []
-                        // let enzymeMinPhScope = []
-                        // let enzymeMinTemperatureScope = []
-                        // let enzymeMutant = []
-                        // let enzymeMutationAfter = []
-                        // let enzymeMutationBefore = []
-                        // let enzymeMutationType = []
-                        // let enzymeName = []
-                        // let enzymePerfectTemperatureScope = []
-                        // let enzymeProduct = []
-                        // let enzymeReference = []
-                        // let enzymeReferenceUrl = []
-                        // let enzymeOverallEvaluation = []
-                        // let enzymePerfectScope = []
-                        // let enzymeSequence = []
-                        // let enzymeSpecies = []
-                        // let enzymeSubstrate = []
-                        // let enzymeTemperatureTolerance = []
-                        // let enzymeTm = []
-                        // let enzymeTolerance = []
-                        // let enzymeToleranceClassification = []
-                        // let enzymeType = []
-                        // let enzymeVmaxMmoEvaluation = []
-                        // let enzymeId = []
-                        // for(var i = 0; i<res.data.length;i++){
-                        //     if(res.data[i].enzymeMutationType == 'W'){
-                        //         res.data[i].enzymeMutationType = '野生型'
-                        //     }else{
-                        //         res.data[i].enzymeMutationType = '突变型'
-                        //     }
-                        //     enzymeMinPhScope.push(res.data[i].enzymeMinPhScope),
-                        //     enzymeAcidAlkaliTolerance.push(res.data[i].enzymeAcidAlkaliTolerance)
-                        //     enzymeId.push(res.data[i].enzymeId)
-                        //     enzymeVmaxMmoEvaluation.push(res.data[i].enzymeVmaxMmoEvaluation)
-                        //     enzymeType.push(res.data[i].enzymeType)
-                        //     enzymeToleranceClassification.push(res.data[i].enzymeToleranceClassification)
-                        //     enzymeTolerance.push(res.data[i].enzymeTolerance)
-                        //     enzymeTm.push(res.data[i].enzymeTm)
-                        //     enzymeTemperatureTolerance.push(res.data[i].enzymeTemperatureTolerance)
-                        //     enzymeSubstrate.push(res.data[i].enzymeSubstrate)
-                        //     enzymeReferenceUrl.push(res.data[i].enzymeReferenceUrl)
-                        //     enzymeReference.push(res.data[i].enzymeReference)
-                        //     enzymeProduct.push(res.data[i].enzymeProduct)
-                        //     enzymePerfectTemperatureScope.push(res.data[i].enzymePerfectTemperatureScope)
-                        //     enzymeName.push(res.data[i].enzymeName)
-                        //     enzymeMutationType.push(res.data[i].enzymeMutationType)
-                        //     enzymeMutationBefore.push(res.data[i].enzymeMutationBefore)
-                        //     enzymeMutationAfter.push(res.data[i].enzymeMutationAfter)
-                        //     enzymeAminoAcidNum.push(res.data[i].enzymeAminoAcidNum)
-                        //     enzymeBelong.push(res.data[i].enzymeBelong)
-                        //     enzymeBhEvaluation.push(res.data[i].enzymeBhEvaluation)
-                        //     enzymeClassification.push(res.data[i].enzymeClassification)
-                        //     enzymeEcCode.push(res.data[i].enzymeEcCode)
-                        //     enzymeGiNum.push(res.data[i].enzymeGiNum)
-                        //     enzymeHalfLife.push(res.data[i].enzymeHalfLife)
-                        //     enzymeKcatEvaluation.push(res.data[i].enzymeKcatEvaluation)
-                        //     enzymeKcatKmEvaluation.push(res.data[i].enzymeKcatKmEvaluation)
-                        //     enzymeKda.push(res.data[i].enzymeKda)
-                        //     enzymeKmMmolEvaluation.push(res.data[i].enzymeKmMmolEvaluation)
-                        //     enzymeMaxPhScope.push(res.data[i].enzymeMaxPhScope)
-                        //     enzymeMaxTemperatureScope.push(res.data[i].enzymeMaxTemperatureScope)
-                        //     enzymeMinTemperatureScope.push(res.data[i].enzymeMinTemperatureScope)
-                        //     enzymeMutant.push(res.data[i].enzymeMutant)
-                        //     enzymeSpecies.push(res.data[i].enzymeSpecies)
-                        //     enzymeSequence.push(res.data[i].enzymeSequence)
-                        //     enzymePerfectScope.push(res.data[i].enzymePerfectScope)
-                        //     enzymeOverallEvaluation.push(res.data[i].enzymeOverallEvaluation)
-                        // }
                         this.meInfo = res.data
-                       
-                        // this.meInfo = {
-                        //     enzymeMinPhScope:enzymeMinPhScope.toString(),
-                        //     enzymeMutant:enzymeMutant.toString(),
-                        //     enzymeSpecies:enzymeSpecies.toString(),
-                        //     enzymeSequence:enzymeSequence.toString(),
-                        //     enzymePerfectScope:enzymePerfectScope.toString(),
-                        //     enzymeMinTemperatureScope: enzymeMinTemperatureScope.toString(),
-                        //     enzymeMaxTemperatureScope: enzymeMaxTemperatureScope.toString(),
-                        //     enzymeMaxPhScope : enzymeMaxPhScope.toString(),
-                        //     enzymeKmMmolEvaluation :  enzymeKmMmolEvaluation.toString(),
-                        //     enzymeKda :  enzymeKda.toString(),
-                        //     enzymeKcatKmEvaluation :  enzymeKcatKmEvaluation.toString(),
-                        //     enzymeKcatEvaluation :  enzymeKcatEvaluation.toString(),
-                        //     enzymeHalfLife :  enzymeHalfLife.toString(),
-                        //     enzymeGiNum :  enzymeGiNum.toString(),
-                        //     enzymeEcCode :  enzymeEcCode.toString(),
-                        //     enzymeClassification :  enzymeClassification.toString(),
-                        //     enzymeBhEvaluation :  enzymeBhEvaluation.toString(),
-                        //     enzymeAminoAcidNum :  enzymeAminoAcidNum.toString(),
-                        //     enzymeBelong : enzymeBelong.toString(),
-                        //     enzymeMutationAfter : enzymeMutationAfter.toString(),
-                        //     enzymeMutationBefore :  enzymeMutationBefore.toString(),
-                        //     enzymeMutationType : enzymeMutationType.toString(),
-                        //     enzymeName : enzymeName.toString(),
-                        //     enzymeAcidAlkaliTolerance : enzymeAcidAlkaliTolerance.toString(),
-                        //     enzymeId : enzymeId.toString(),
-                        //     enzymeVmaxMmoEvaluation: enzymeVmaxMmoEvaluation.toString(),
-                        //     enzymeType : enzymeType.toString(),
-                        //     enzymeToleranceClassification : enzymeToleranceClassification.toString(),
-                        //     enzymeTolerance : enzymeTolerance.toString(),
-                        //     enzymeTm : enzymeTm.toString(),
-                        //     enzymeTemperatureTolerance: enzymeTemperatureTolerance.toString(),
-                        //     enzymeSubstrate : enzymeSubstrate.toString(),
-                        //     enzymeReferenceUrl : enzymeReferenceUrl.toString(),
-                        //     enzymeReference : enzymeReference.toString(),
-                        //     enzymeProduct: enzymeProduct.toString(),
-                        //     enzymePerfectTemperatureScope : enzymePerfectTemperatureScope.toString(),
-                        //     enzymeOverallEvaluation:enzymeOverallEvaluation.toString()
-                        // }
                         this.seeInfo =true
                     }else{
                         this.$message({
@@ -1517,14 +1396,6 @@ export default {
                     type: 'error'
                 });
             }
-            // console.log(this.multipleSelection)
-            // if (rows) {
-            //     rows.forEach(row => {
-            //         this.$refs.multipleTable.toggleRowSelection(row);
-            //     });
-            // } else {
-            //     this.$refs.multipleTable.clearSelection();
-            // }
         },
 
         toggleCopy(row){

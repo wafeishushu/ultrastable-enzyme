@@ -1,0 +1,9 @@
+java/.idea
+java/.settings
+java/target
+java/.classpath
+java/.project
+java/.factorypath
+
+frontend/.idea
+frontend/node_modules/
